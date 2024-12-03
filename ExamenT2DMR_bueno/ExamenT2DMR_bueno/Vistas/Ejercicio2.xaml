@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenT2DMR_bueno.Vistas.Ejercicio2"
+             Title="Registro">
+    <VerticalStackLayout Spacing="20">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label 
+            Text="Introduce tu nombre: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Entry
+            x:Name="txtNombre"
+            Keyboard="Plain"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label 
+            Text="Introduce tu correo electrónico: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Entry
+            x:Name="txtEmail"
+            Keyboard="Email"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label 
+            Text="Introduce tu contraseña: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Entry
+            x:Name="txtContrasenia"
+            Keyboard="Plain"
+            IsPassword="True"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label 
+            Text="Repite tu contraseña: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Entry
+            x:Name="txtContraseniaConfirmada"
+            Keyboard="Plain"
+            IsPassword="True"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="btnRegistrar"
+            Text="Registrar"
+            Clicked="onRegistrarClicked"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Button
+            x:Name="btnLimpiar"
+            Text="Limpiar"
+            Clicked="onLimpiarClicked"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

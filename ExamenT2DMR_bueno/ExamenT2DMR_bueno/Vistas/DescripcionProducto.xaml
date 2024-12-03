@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenT2DMR_bueno.Vistas.DescripcionProducto"
+             Title="DescripcionProducto">
+    <VerticalStackLayout>
+        <Label 
+            Text="Detalles del Producto"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image 
+            Source ="{Binding Imagen}"
+            WidthRequest="200" 
+            HeightRequest="200"
+            />
+        <Label 
+            Text="{Binding Nombre}"
+            FontSize="Title" 
+            FontAttributes="Bold"
+            />
+        <Label
+            Text="{Binding Descripcion}"
+            FontSize="Default"
+            FontAttributes="Italic"
+            />
+    </VerticalStackLayout>
+</ContentPage>

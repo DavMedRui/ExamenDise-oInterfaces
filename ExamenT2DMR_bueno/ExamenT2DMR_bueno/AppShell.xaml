@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ExamenT2DMR_bueno.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ExamenT2DMR_bueno"
+    Shell.FlyoutBehavior="Flyout"
+    Title="ExamenT2DMR_bueno">
+
+    <ShellContent
+        Title="Ejercicio1"
+        ContentTemplate="{DataTemplate local:Vistas.Ejercicio1}"
+        Route="Ejercicio1" />
+    <ShellContent
+        Title="Ejercicio2"
+        ContentTemplate="{DataTemplate local:Vistas.Ejercicio2}"
+        Route="Ejercicio2" />
+    <ShellContent
+        Title="Ejercicio3"
+        ContentTemplate="{DataTemplate local:Vistas.Ejercicio3}"
+        Route="Ejercicio3" />
+
+</Shell>

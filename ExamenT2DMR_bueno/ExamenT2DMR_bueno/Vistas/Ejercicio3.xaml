@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenT2DMR_bueno.Vistas.Ejercicio3"
+             Title="Ejercicio3">
+    <ScrollView
+    VerticalOptions="FillAndExpand">
+        <StackLayout>
+
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label 
+            Text="Productos"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+
+
+
+                <ListView x:Name="lista"
+                  SelectionMode="Single"
+                  SeparatorVisibility="Default"
+                  SeparatorColor="Blue"
+                  ItemTapped="OnItemTapped"
+                  ItemsSource="{Binding Productos}"
+                  >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="4"
+                                Source="{Binding Imagen}"
+                                Aspect="AspectFill"
+                                HeightRequest="60"
+                                WidthRequest="60" />
+                                    <Label Grid.Column="1"
+                                Text="{Binding Nombre}"
+                                FontAttributes="Bold" />
+                                    <Label Grid.Row="2"
+                                Grid.Column="1"
+                                Text="Pulsa para ver más información"
+                                FontAttributes="Italic"
+                                VerticalOptions="End" />
+
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
